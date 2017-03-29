@@ -11,11 +11,12 @@ compile 'com.cxz:swipebacklibrary:1.0.0'
 ### Activity继承SwipeBackActivity
 ```
 public class MainActivity extends SwipeBackActivity{
-    @Override
+    private SwipeBackLayout mSwipeBackLayout;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
-		...
-		SwipeBackLayout mSwipeBackLayout = getSwipeBackLayout();
-	}
+	...
+	mSwipeBackLayout = getSwipeBackLayout();//获取SwipeBackLayout
+    }
 }
 ```
 ### 设置滑动关闭的方向
