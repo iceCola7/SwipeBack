@@ -30,8 +30,8 @@ dependencies {
 
 publish {
     userOrg = 'bjchenxz'
-    groupId = 'com.cxz'
-    artifactId = 'swipebacklibrary'
+    groupId = 'com.cxz.swipebacklibrary'
+    artifactId = 'swipeback'
     publishVersion = '1.0.0'
     desc = 'Oh hi, this is a nice description for a project, right?'
     website = 'https://github.com/bjchenxz/SwipeBack'
