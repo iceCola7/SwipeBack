@@ -2,14 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 27
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
     buildTypes {
         release {
@@ -23,16 +23,17 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
 }
 
 publish {
-    userOrg = 'bjchenxz'
-    groupId = 'com.cxz.swipebacklibrary'
-    artifactId = 'swipeback'
-    publishVersion = '1.0.0'
-    desc = 'Oh hi, this is a nice description for a project, right?'
-    website = 'https://github.com/bjchenxz/SwipeBack'
+    repoName = 'maven'  // 仓库名，没有填写默认仓库是maven
+    userOrg = 'iceCola7'  // bintray注册的用户名
+    groupId = 'com.cxz'  // implementation引用时的第1部分groupId
+    artifactId = 'swipeback'  // implementation引用时的第2部分项目名
+    publishVersion = '1.0.1'  // implementation引用时的第3部分版本号
+    desc = 'Oh hi, this is a nice description for a project, right?' // 项目描述
+    website = 'https://github.com/iceCola7/SwipeBack'  // github 托管地址
 }
