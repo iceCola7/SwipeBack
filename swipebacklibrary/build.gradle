@@ -30,10 +30,10 @@ dependencies {
 
 publish {
     repoName = 'maven'  // 仓库名，没有填写默认仓库是maven
-    userOrg = 'iceCola7'  // bintray注册的用户名
+    userOrg = 'icecola7'  // bintray注册的用户名
     groupId = 'com.cxz'  // implementation引用时的第1部分groupId
     artifactId = 'swipeback'  // implementation引用时的第2部分项目名
     publishVersion = '1.0.1'  // implementation引用时的第3部分版本号
-    desc = 'Oh hi, this is a nice description for a project, right?' // 项目描述
+    desc = 'SwipeBack is an android library that can finish a activity by using gesture.' // 项目描述
     website = 'https://github.com/iceCola7/SwipeBack'  // github 托管地址
 }
