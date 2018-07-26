@@ -6,7 +6,7 @@ SwipeBackLayout侧滑关闭页面
 ## 使用方式
 ### build.gradle文件
 ```
-compile 'com.cxz.swipebacklibrary:swipeback:1.0.0'
+implementation 'com.cxz:swipeback:1.0.1'
 ```
 ### Activity继承SwipeBackActivity
 ```
